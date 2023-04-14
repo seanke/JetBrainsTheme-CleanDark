@@ -2,7 +2,7 @@
   "name": "Clean Dark Theme",
   "dark": true,
   "author": "Seanke",
-  "editorScheme": "/sean.xml",
+  "editorScheme": "/theme/CleanDarkTheme.xml",
   "colors": {
     "basicBackgroundWeak": "#10151c",
     "basicBackground": "#141e23",
@@ -16,6 +16,7 @@
     "debug": "#00ff00"
   },
   "ui": {
+
     "*": {
       "background": "basicBackground",
       "borderColor": "basicBackground",
@@ -46,7 +47,6 @@
     "Component.borderColor": "basicBackground",
     "Component.focusedBorderColor": "accentColorWeaker",
     "DefaultTabs.underlineColor": "accentColor",
-    "DragAndDrop.areaBorderColor": "accentColorWeaker",
     "EditorPane.selectionBackground": "accentColorWeaker",
     "EditorTabs.inactiveUnderlineColor": "accentColorWeaker",
     "EditorTabs.underlineColor": "accentColor",

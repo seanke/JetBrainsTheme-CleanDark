@@ -1,41 +1,28 @@
-<!-- Copyright 2000-2022 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. -->
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
-
 <idea-plugin>
+    <id>Seanke.CleanDarkTheme</id>
+    <version>1.0.0</version>
 
-  <!-- Unique id for this plugin. Must stay constant for the life of the plugin. -->
-  <id>seanke.cleandarktheme</id>
+    <name>CleanDarkTheme</name>
+    <category>UI</category>
 
-  <!-- Text to display as name on Settings | Plugin page -->
-  <name>Clean Dark Theme</name>
+    <idea-version since-build="222" until-build="232.*"/>
 
-  <!-- The version of this plugin -->
-  <version>0.1</version>
+    <description><![CDATA[
+          A simple, clean and dark theme.
+    ]]></description>
 
-  <!-- Compatible with the following versions of IntelliJ Platform: version 2022.1 and newer. -->
-  <idea-version since-build="2022.1"/>
+    <!-- Short summary of new features and bugfixes in the latest plugin version.
+         Displayed on the Plugin Page and IDE Plugin Manager. Simple HTML elements can be included between <![CDATA[  ]]> tags. -->
+    <change-notes><![CDATA[
+    Initial release of the theme.
+  ]]></change-notes>
 
-  <!-- Indicate this plugin can be loaded in all IntelliJ Platform-based products. -->
-  <depends>com.intellij.modules.platform</depends>
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
 
-  <description>
-    <![CDATA[
-      A simple, clean and dark theme.
-    ]]>
-  </description>
-  <change-notes>
-    <![CDATA[
-      <ul>
-        <li><b>0.1</b> Initial release. Basic theme functionality.</li>
-      </ul>
-    ]]>
-  </change-notes>
-
-  <!-- Text to display as company information on Settings | Plugin page -->
-  <vendor url="https://plugins.jetbrains.com">IntelliJ Platform SDK</vendor>
-
-  <extensions defaultExtensionNs="com.intellij">
-    <themeProvider id="eb9b7461-397b-4b98-a422-224fc0a74564" path="/theme_basics.theme.json"/>
-  </extensions>
-
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="CleanDarkTheme" path="/theme/CleanDarkTheme.theme.json"/>
+    </extensions>
 </idea-plugin>
